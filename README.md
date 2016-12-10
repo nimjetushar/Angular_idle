@@ -19,19 +19,19 @@ In angular config can perform following configuration setting. Just have to inje
 
 1: Setting idle timer:
 This is used to set the idle timer for which the application will get idle complete event
-idleProvider.idle( *specify time in ms* )
+idleProvider.idle( *specify time in ms* ).
 The input should be in integer.
 eg- idleProvider.idle( 60000 ) this specify idle time of 1 min
 Default time is 30 min
 
 2: Auto resume:
 Based on this the idle timer will resume
-idleProvider.autoResume( *boolean* )
+idleProvider.autoResume( *boolean* ).
 By default auto resume is true
 
 3: Select interrupt:
 Interrupt are the event for which you want to reset the idle timer
-idleProvider.interrupt( *string* )
+idleProvider.interrupt( *string* ).
 eg- interrupt: 'mousemove keydown DOMMouseScroll mousewheel mousedown touchstart touchmove scroll'
 
 4: Disable Title change:
@@ -42,7 +42,7 @@ By default it is set to false
 
 5: Document title on idle:
 This is used to change the document title based on your choice of text
-idleProvider.title( *string* )
+idleProvider.title( *string* ).
 
 
 * Dependencies
