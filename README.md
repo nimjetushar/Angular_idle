@@ -1,5 +1,7 @@
 # Angular_idle #
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/38764d07abc845b1aa68569988f294b9)](https://www.codacy.com/app/tpn/Angular_idle?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nimjetushar/Angular_idle&amp;utm_campaign=Badge_Grade)
+
 This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for? ###
