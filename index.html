@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
+  <head lang="en">
+    <meta charset="UTF-8" />
     <title>Idle lib</title>
     <script src="js/lib/angular.js"></script>
     <script src="js/lib/angular-idle.js"></script>
     <script src="js/app.js"></script>
-</head>
-<body>
-<div id="mainContainer" ng-controller="idleDemoCtrl">
-    <div id="config">
+  </head>
+  <body>
+    <div id="mainContainer" ng-controller="idleDemoCtrl">
+      <div id="config">
         <div>
-            <span>Idle Time</span>
-            <span>{{idleTime}} ms</span>
+          <span>Idle Time</span> <span>{{ idleTime }} ms</span>
         </div>
-    </div>
-    <div>
+      </div>
+      <div>
         <button ng-click="watch()">Start watching</button>
         <button ng-click="unwatch()">Unwatch</button>
         <button ng-click="destroy()">Destroy listener</button>
+      </div>
+      <div id="messagContainer">{{ idleCompleteMessage }}</div>
     </div>
-    <div id="messagContainer">{{idleCompleteMessage}}</div>
-</div>
-<style>
-    #mainContainer {
+    <style>
+      #mainContainer {
         width: 1000px;
         margin: 10% auto;
-    }
-    button {
+      }
+      button {
         margin: 0 10%;
         padding: 10px;
-    }
-    #config {
+      }
+      #config {
         margin: 0 auto 20px;
-    }
-    #messagContainer {
+      }
+      #messagContainer {
         width: 300px;
         margin: 50px auto;
-    }
-</style>
-</body>
+      }
+    </style>
+  </body>
 </html>
