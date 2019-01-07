@@ -103,6 +103,12 @@
         $document[0].title = status ? options.title : initialDocTitle;
       }
 
+      function refreshTitle() {
+        $timeout(function () {
+          toggleDocTitle(false);
+        }, options.titleRefreshTimer);
+      }
+
       // broadcast event when idle for specified time
       function idleComplete() {
         state.isRunning = false;
@@ -120,12 +126,6 @@
         if (options.autoRefreshTitle) {
           refreshTitle();
         }
-      }
-
-      function refreshTitle() {
-        $timeout(function () {
-          toggleDocTitle(false);
-        }, options.titleRefreshTimer);
       }
 
       // Adding interrupt listener
