@@ -42,4 +42,4 @@
   angular.element(document).ready(function () {
     angular.bootstrap(document, ["ngIdleDemo"]);
   });
-})(window.angular, document);
+}(window.angular, document));

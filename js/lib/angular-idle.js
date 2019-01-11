@@ -136,4 +136,4 @@
       return ngip;
     }
   });
-})(window.angular);
+}(window.angular));
